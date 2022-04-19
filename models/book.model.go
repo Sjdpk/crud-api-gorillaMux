@@ -13,5 +13,5 @@ type BooksModel struct {
 	BookAuthor string         `gorm:"size:255;not null" json:"book_author"`
 	CreatedAt  time.Time      `gorm:"default:CURRENT_TIMESTAMP" json:"created_at"`
 	UpdatedAt  time.Time      `gorm:"default:CURRENT_TIMESTAMP" json:"updated_at"`
-	DeletedAt  gorm.DeletedAt `gorm:"default:CURRENT_TIMESTAMP" json:"deleted_at"`
+	DeletedAt  gorm.DeletedAt `gorm:"index" json:"deleted_at"`
 }
