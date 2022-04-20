@@ -18,10 +18,10 @@ type BooksModel struct {
 }
 
 type BookSubModel struct {
-	ID         uint32
-	BookName   string
-	BookPrice  float64
-	BookAuthor string
-	CreatedAt  time.Time
-	UpdatedAt  time.Time
+	ID         uint32    `json:"book_id"`
+	BookName   string    `json:"book_name"`
+	BookPrice  float64   `json:"book_price"`
+	BookAuthor string    `json:"book_author"`
+	CreatedAt  time.Time `json:"created_at"`
+	UpdatedAt  time.Time `json:"updated_at"`
 }
