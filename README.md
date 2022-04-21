@@ -1,5 +1,6 @@
 1. first create main.go
-2. create model for database
-3. Database connection code
-4. model controller
-5. controller router
+2. Database connection code
+
+3. create model for database
+4. controller For model
+5. router for controller 
